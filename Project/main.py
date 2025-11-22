@@ -20,8 +20,12 @@ try:
     dayBirth = abs(dateBirth - datBirtday)
 
 
-    if dateNow == dateBirth:
+
+    if dateNow == int(dayBirth - dateBirth - 6):
         
+        labelBirthday = Label(root, text="Happy Birthday")
+        labelBirthday.pack()
+
         labelTitle = Label(root, text=f"{TITLE}")
         labelGithub = Label(root, text=f"{URL}")
 
